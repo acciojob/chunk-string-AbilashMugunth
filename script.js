@@ -1,7 +1,7 @@
 let ans = [];
 
 function stringChop(str, size) {
-  if(str===''){
+  if(str==='' || str===null){
 	return [];
   }
   for (let i = 0; i < str.length; i += size) {
@@ -17,6 +17,6 @@ function slice(str, start, end) {
 }
 
 // Do not change the code below
-const str = prompt("Enter String.");
-const size = prompt("Enter Chunk Size.");
-alert(stringChop(str, size));
+// const str = prompt("Enter String.");
+// const size = prompt("Enter Chunk Size.");
+// alert(stringChop(str, size));
