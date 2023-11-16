@@ -1,7 +1,9 @@
 let ans = [];
 
 function stringChop(str, size) {
-  if(str.length==0)return ans;
+  if(str===''){
+	return [];
+  }
   for (let i = 0; i < str.length; i += size) {
     slice(str, i, i + size);
   }
